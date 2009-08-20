@@ -1,0 +1,39 @@
+<define-tag perl_begin_news_boxes>
+<div class="sidebarbox-border bg-green01">
+<div class="sidebarbox-title-shading bg-green02">Testimonials</div>
+
+<p>
+<q>We went live on budget, to specification and on time</q>
+-- <a href="$(ROOT)/learn/who-is-using/#testimonial-ajt">ajt</a>
+</p>
+
+<p>
+<q>Perl saved my vacation!</q>
+-- <a href="$(ROOT)/learn/who-is-using/#testimonial-saved-my-vacation">Tom
+Moertel</a>
+</p>
+
+<p>
+<a href="$(ROOT)/learn/who-is-using/">More…</a>
+</p>
+</div>
+
+<div class="sidebarbox-border news-box">
+<div class="sidebarbox-title-shading news-box-title"><a href="$(ROOT)/news/">News</a></div>
+<ul>
+<li>
+03-August-09: <a href="$(ROOT)/news/#news_03_August_2009">More Updates</a>
+</li>
+<li>
+27-July-09: <a href="$(ROOT)/news/#news_27_July_2009">Many New Updates</a>
+</li>
+<li>
+14-May-09: <a href="$(ROOT)/news/#news_14_May_2009">Many New Updates</a>
+</li>
+<li>
+<a href="$(ROOT)/news/">More news...</a>
+</li>
+</ul>
+</div>
+</define-tag>
+

@@ -1,0 +1,79 @@
+#include '../template.wml'
+
+<latemp_subject "Perl for CGI and Web Programming" />
+
+<p>
+Perl 5 was <b>one of the first available technologies</b> for automating a 
+web-server, and is still considered <b>one of the most powerful</b> and most 
+cost-effective ones, <b>today</b>. Once you learn the core language, and some 
+HTML and HTTP concepts, programming a simple CGI callback or form handler is 
+very easy and straightforward. 
+</p>
+
+<define-tag cgi_course_url whitespace="delete">
+http://jdporter.perlmonk.org/cgi_course/
+</define-tag>
+
+<p>
+Users are <b>recommended to start</b> by reading 
+<a href="<cgi_course_url />"><b>Ovid's
+CGI Course</b></a>. The other links here may also prove useful.
+</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<h3><a href="<cgi_course_url />">Ovid's CGI
+Course</a></h3>
+
+<p>
+A free CGI Course by Curtis Poe (Ovid) for people who already know a little Perl and 
+a little HTML.
+</p>
+
+<h3><a href="http://www.cgi101.com/class/">CGI Programming 101</a></h3>
+
+<p>
+A free online course about CGI in Perl.
+</p>
+
+<h3><a href="<wiki_link url="CGI_Getting_Started" />">Our own CGI Getting Started</a></h3>
+
+<p>
+In the Wiki.
+</p>
+
+<h2 id="interfaces">Interfaces</h2>
+
+<h3><a href="http://www.apache-asp.org/">Apache::ASP</a></h3>
+
+<p>
+An implementation of the Active Server Pages for Perl on UNIXes. Compatible
+with the Perl ASP on Microsoft's IIS server, and so provides a cross-platform
+solution. 
+</p>
+
+<h3><a href="http://www.masonhq.com/">HTML::Mason</a></h3>
+
+<p>
+A portable solution for a dynamic maintenance of a Perl site. Very powerful
+and feature-rich. Also cross-platform.
+</p>
+
+<h2 id="frameworks">Web Frameworks</h2>
+
+<h3><a href="http://cgiapp.erlbaum.net/">CGI::Application</a></h3>
+
+<p>
+CGI::Application is a lightweight and flexible MVC framework for web
+application development. It doesn't give as much as more complex frameworks,
+but is still useful for organising your code and using templates.
+</p>
+
+<h3><a href="http://www.catalystframework.org/">Catalyst</a></h3>
+
+<p>
+A flexible web framework for Perl, with many useful modules for it on
+CPAN, that provide interfaces to many other modules. After learning it,
+one can build web applications with ease.
+</p>
+

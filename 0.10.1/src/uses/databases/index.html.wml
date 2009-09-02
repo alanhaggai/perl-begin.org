@@ -1,0 +1,128 @@
+#include '../template.wml'
+
+<latemp_subject "Working with Databases in Perl" />
+
+<h2 id="intro">Introduction</h2>
+
+<p>
+There are many types of databases:
+</p>
+
+<ul>
+<li>
+If you want to work with databases based on <a href="http://en.wikipedia.org/wiki/SQL">SQL</a> (Structured
+Query Language), then refer to <a href="#sql">the SQL
+databases section of this page</a>. 
+</li>
+<li>
+If you want to use a DBM database (implementing keys→values dictionaries or
+mappings inside a file) refer to our 
+<a href="#dbm">DBM databases section</a>.
+</li>
+<li>
+If you want xBase (dBase / Clipper / FoxBase) databases refer to our
+<a href="#xbase">xBase section</a>.
+</li>
+<li>
+If you want a distributed database (similar to Google's BigTable), see our 
+<a href="#distributed">distributed databases section</a>.
+</li>
+</ul>
+
+<h2 id="sql">SQL Databases</h2>
+
+<p>
+The de-facto standard for working with SQL databases in Perl is 
+<a href="http://dbi.perl.org/">DBI</a> (short for Database Interface). It
+provides a unified way to perform SQL queries across many database 
+backends: <a href="http://search.cpan.org/dist/DBD-Pg/">PostgreSQL</a>,
+<a href="http://search.cpan.org/dist/DBD-SQLite/">SQLite</a>, 
+<a href="http://search.cpan.org/dist/DBD-mysql/">MySQL</a> (but see
+<a href="http://www.shlomifish.org/open-source/anti/mysql/">this page</a>
+for some reasons why you may prefer a different system),
+<a href="http://search.cpan.org/dist/DBD-Oracle/">Oracle</a>,
+<a href="http://search.cpan.org/dist/DBD-InterBase/">Firebird</a>,
+and others.
+</p>
+
+<p>
+Above DBI, people wrote some useful abstractions:
+</p>
+
+<ul>
+
+<li>
+<p>
+<a href="http://search.cpan.org/dist/DBIx-Simple/">DBIx-Simple</a> - an easy
+to use Object-Oriented Interface to DBI.
+</p>
+</li>
+
+<li>
+<p>
+<a href="http://search.cpan.org/dist/DBIx-Class/">DBIx-Class</a> - a
+powerful and convenient object-relational mapper. Use of the older and less 
+philosophically sound 
+<a href="http://search.cpan.org/dist/Class-DBI/">Class-DBI</a> is
+heavily discouraged.
+</p>
+</li>
+
+<li>
+<p>
+<a href="http://search.cpan.org/dist/Rose-DB-Object/">Rose-DB-Object</a> - 
+another ORM - seems to be much less popular than DBIx-Class, but still actively
+maintained.
+</p>
+</li>
+
+</ul>
+
+<p>
+When working with databases make sure you avoid common pitfalls such
+as <a href="http://en.wikipedia.org/wiki/SQL_injection">SQL injection
+vulnerabilities</a>.
+</p>
+
+<h2 id="dbm">DBM Databases</h2>
+
+<ul>
+
+<li>
+<a href="http://search.cpan.org/dist/BerkeleyDB/">The BerkeleyDB CPAN
+module</a> is the standard module for working with 
+<a href="http://www.oracle.com/technology/products/berkeley-db/index.html">Oracle 
+Berkeley DB</a> (formerly Sleepy Cat Berkeley DB) and maps the ANSI C 
+library's API closely. Note that Berkeley DB is licensed under
+<a href="http://en.wikipedia.org/wiki/Sleepycat_License">the Sleepycat
+License</a> which is strong copyleft, and does not allow use for non-open-source
+programs.
+</li>
+
+<li>
+<a href="http://tokyocabinet.sourceforge.net/">Tokyo Cabinet</a> - a modern,
+fast and powerful DBM implementation available under the LGPL license (which
+permits use in non-open-source projects).
+</li>
+
+<li>
+<a href="http://search.cpan.org/dist/DBM-Deep/">DBM-Deep</a> - a multi-level
+hash/array DBM that supports transactions. Reported to be slow, however.
+</li>
+
+</ul>
+
+<h2 id="xbase">XBase Databases</h2>
+
+<p>
+There seems to be <a href="http://search.cpan.org/dist/DBD-XBase/">an
+XBase module on CPAN</a> . It seems to be pure-Perl, so it may be slow.
+</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="http://modperlbook.org/html/part3.html"><b>"Databases and mod_perl"
+part from Practical mod_perl</b></a> - provides many useful insights.</li>
+</ul>
+
